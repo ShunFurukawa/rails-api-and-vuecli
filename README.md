@@ -25,6 +25,8 @@ $ docker-compose exec ruby bundle exec rails db:create
 
 $ docker-compose exec ruby bundle exec rails db:migrate
 
+$ docker-compose exec ruby bundle exec rails db:seed
+
 $ open http://127.0.0.1:3000/
 ```
 
