@@ -55,6 +55,14 @@ services:
         source: postgres-data
         target: /var/lib/postgresql/data
 
+  nginx:
+    build:
+      context: .
+      dockerfile: ./docker/nginx/Dockerfile
+    container_name: nginx
+    ports:
+      - 80:80
+
 volumes:
   node-modules-data:
   postgres-data:
