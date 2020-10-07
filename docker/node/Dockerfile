@@ -9,4 +9,4 @@ COPY /front/package.json ./
 
 RUN npm install
 
-CMD ["/bin/sh"]
+CMD ["npm", "run", "serve"]
